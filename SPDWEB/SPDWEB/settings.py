@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-cb9f_t1p6jde%@-@hvuzs8qxv)1l@p_&^7+esml&tvwn0fbgpl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['44.201.166.50', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -87,7 +87,7 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'spd-database',
+        'NAME': 'postgres',
 
         'USER': 'ADMIN1',
 
@@ -135,11 +135,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-
-STATICFILES_DIR = [
+# You have STATICFILES_DIR (singular), it should be STATICFILES_DIRS (plural)
+# Also need to add STATIC_ROOT
+STATIC_URL = '/static/'  # add the leading slash
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # different from STATICFILES_DIRS
 
 
 # Default primary key field type
