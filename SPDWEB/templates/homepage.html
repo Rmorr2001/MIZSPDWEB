@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo-container {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8B0000;
+        }
+
+        .title {
+            color: #8B0000;
+        }
+
+        .title h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .title h2 {
+            margin: 5px 0 0 0;
+            font-weight: normal;
+            color: #666;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .values-bar {
+            background-color: #8B0000;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .values-bar span {
+            margin: 0 50px;
+            font-size: 1.2em;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            border: 2px solid #8B0000;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #8B0000;
+        }
+
+        .tab.active {
+            background-color: #8B0000;
+            color: white;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .partner-logos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 30px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .partner-logo {
+            width: 200px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #8B0000;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <i data-lucide="shield" size="48"></i>
+        </div>
+        <div class="title">
+            <h1>Sigma Phi Delta</h1>
+            <h2>Beta Omicron Chapter</h2>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Rush</a>
+            <a href="#">Officers</a>
+            <a href="#">Members</a>
+            <a href="#">Alumni</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <p>Welcome to Sigma Phi Delta, a professional fraternity dedicated to fostering excellence in academic achievement, professional development, and lifelong brotherhood.</p>
+        
+        <a href="/admin" class="cta-button">Admin Login</a>
+    </div>
+
+    <div class="values-bar">
+        <span>Excellence</span> |
+        <span>Leadership</span> |
+        <span>Service</span> |
+        <span>Brotherhood</span>
+    </div>
+
+    <div class="tabs">
+        <div class="tab active">Professional</div>
+        <div class="tab">Community Service</div>
+        <div class="tab">Academic</div>
+        <div class="tab">Brotherhood</div>
+    </div>
+
+    <div class="content">
+        <p>One in three of our members participate in internships and study abroad opportunities. We are dedicated to helping our brothers secure professional opportunities both during and after their college experience.</p>
+        
+        <div class="partner-logos">
+            <div class="partner-logo">
+                <i data-lucide="building" size="48"></i>
+            </div>
+            <div class="partner-logo">
+                <i data-lucide="cpu" size="48"></i>
+            </div>
+            <div class="partner-logo">
+                <i data-lucide="rocket" size="48"></i>
+            </div>
+            <div class="partner-logo">
+                <i data-lucide="globe" size="48"></i>
+            </div>
+            <div class="partner-logo">
+                <i data-lucide="database" size="48"></i>
+            </div>
+            <div class="partner-logo">
+                <i data-lucide="plane" size="48"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
