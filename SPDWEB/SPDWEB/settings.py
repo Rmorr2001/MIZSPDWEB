@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-cb9f_t1p6jde%@-@hvuzs8qxv)1l@p_&^7+esml&tvwn0fbgpl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['44.201.166.50', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['.sigmaphideltamizzou.online','44.201.166.50', 'localhost', '127.0.0.1']
 
 
 # Application definition
