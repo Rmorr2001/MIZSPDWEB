@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SPDWEB.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SPDWEB_FILES.settings')
 
 application = get_wsgi_application()
