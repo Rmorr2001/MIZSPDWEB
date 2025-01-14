@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'SPDWEB.urls'
+ROOT_URLCONF = 'SPDWEB_FILES.urls'
 
 TEMPLATES = [
     {
