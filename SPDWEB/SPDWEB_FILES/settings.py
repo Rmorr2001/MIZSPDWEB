@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'SPDWEB.wsgi.application'
+WSGI_APPLICATION = 'SPDWEB.SPDWEB_FILES.application'
 
 
 # Database
